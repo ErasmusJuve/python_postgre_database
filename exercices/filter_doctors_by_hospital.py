@@ -1,24 +1,20 @@
-
-
 import conection as con
 
 
-def filter_doctor_by_salary_and_specialty(specialty: str, salary: float):
-    """Regresa la lista de doctores con la especialdiad de y un slario mayor a 30000
+def get_doctors_by_hospital(hospital_id: int):
+    """Retorna los doctores que pertenezcan al hospital indicado con el hospital_id
 
     Args:
-        specialty (str): Nombre de la especialidad por la cual se filtrara
-        salary (float): Salario minimo por el cual se filtrara
+        hospital_id (int): Id del hospital por el cual se realizara el filtro
 
     Raises:
         e: En caso de existir un error mostrara el traceback
     """    
-
     try:
         conection = con.get_connection()
         cursor = conection.cursor()
-        query = """SELECT * FROM doctores WHERE speciality = %s and salary > %s;"""
-        cursor.execute(query, (specialty, salary,))
+        query = """SELECT * FROM doctores WHERE hospital_id =%s"""
+        cursor.execute(query, (hospital_id,))
         records = cursor.fetchall()
 
         for row in records:
@@ -29,7 +25,6 @@ def filter_doctor_by_salary_and_specialty(specialty: str, salary: float):
             print("Especialidad ", row[4])
             print("Salario ", row[5])
             print("Experiencia ", row[6])
-            print('-----')
-
+            print('------')
     except Exception as e:
         raise e

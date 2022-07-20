@@ -162,3 +162,24 @@ Specialty: Garnacologist
 Salary: 32000
 Experience: None 
 ```
+
+## Ejercicio 4: Obtener la lista de doctores que pertenezcan a un hospital
+
+Resultado esperado
+```
+Numero del doctor  103
+Nombre de doctor  Susan
+Numero del hospital al que pertenece  2
+Fecha que se unio al equipo  2016-05-19
+Especialidad  Garnacologist
+Salario  25000.0
+Experiencia  None
+
+Numero del doctor  104
+Nombre de doctor  Robert
+Numero del hospital al que pertenece  2
+Fecha que se unio al equipo  2017-12-28
+Especialidad  Pediatric
+Salario  28000.0
+Experiencia  None
+```

@@ -1,6 +1,7 @@
 import conection
 import fetch_information
 import filter_doctors
+import filter_doctors_by_hospital
 
 
 def main():
@@ -21,6 +22,10 @@ def main():
     filter_doctors.filter_doctor_by_salary_and_specialty('Garnacologist', 30000)
     print('-'*50)
 
+    # Solucion del ejercicio 4
+    print("Ejercicio 4: Obtener la lista de doctores que pertenezcan a un hospital")
+    filter_doctors_by_hospital.get_doctors_by_hospital(2)
+    print('-'*50)
 
 if __name__ == "__main__":
     main()
