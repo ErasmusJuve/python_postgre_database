@@ -1,1 +1,5 @@
+# Se ignora la carpeta del environment
 /venv
+
+# Se ignora la carpeta del bytecode
+exercices/__pycache__/

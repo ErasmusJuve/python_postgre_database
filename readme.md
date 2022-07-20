@@ -116,5 +116,29 @@ Instalamos la libreria psycopg2
 pip install psycopg2
 ```
 
+Resultado esperado
+```
+('PostgreSQL 14.4 on x86_64-pc-linux-musl, compiled by gcc (Alpine 11.2.1_git20220219) 11.2.1 20220219, 64-bit',)
+```
+
+## Ejercicio 2: Obtener la informacion del hospital y doctor por numero de id
+
+Resultado esperado:  
+
+```
+Printing Hospital record
+Hospital Id: 2
+Hospital Name: Cleveland Clinic
+Bed Count: 400
+
+Printing Doctor record
+Doctor Id: 105
+Doctor Name: Linda
+Hospital Id: 3
+Joining Date: 2004-06-04
+Specialty: Garnacologist
+Salary: 42000
+Experience: None
+```
 
 
