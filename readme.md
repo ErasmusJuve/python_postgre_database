@@ -109,7 +109,7 @@ Data model de la base de datos
 
 ![](https://i.imgur.com/G7dsnUE.png)
 
-## Ejercicio 1: Conectarse a la base de datos e imrpimir la version
+## Ejercicio 1: Conectarse a la base de datos e imprimir la version
 
 Instalamos la libreria psycopg2  
 ```bash
@@ -142,3 +142,23 @@ Experience: None
 ```
 
 
+## Ejercicio 3: Obtener la info de los doctores donde el salario sea mayor a $30000 y especialidad sea Garnacologist
+
+Resultado esperado 
+```
+Doctor Id:  105
+Doctor Name: Linda
+Hospital Id: 3
+Joining Date: 2004-06-04
+Specialty: Garnacologist
+Salary: 42000
+Experience: None 
+ 
+Doctor Id:  107
+Doctor Name: Richard
+Hospital Id: 4
+Joining Date: 2014-08-21
+Specialty: Garnacologist
+Salary: 32000
+Experience: None 
+```
