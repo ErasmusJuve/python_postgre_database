@@ -7,6 +7,7 @@ Con este ejercicio se realizaran operaciones CRUD
 Requisitos:
 1. Python 3.10.2 (Minimo)
 2. Base de datos postgres version 14.4 (Minimo)
+3. Libreria **psycopg2**
 
 
 ## Creacion del contenedor de la base dedatos
@@ -29,7 +30,7 @@ CREATE ROLE usuario_dev WITH
 	CREATEDB
 	NOCREATEROLE
 	INHERIT
-
+    
 	NOREPLICATION
 	CONNECTION LIMIT -1
 	PASSWORD 'userdev12345';
@@ -107,4 +108,13 @@ SELECT * FROM Doctores
 Data model de la base de datos 
 
 ![](https://i.imgur.com/G7dsnUE.png)
+
+## Ejercicio 1: Conectarse a la base de datos e imrpimir la version
+
+Instalamos la libreria psycopg2  
+```bash
+pip install psycopg2
+```
+
+
 
