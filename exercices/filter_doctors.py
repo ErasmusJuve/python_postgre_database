@@ -15,8 +15,8 @@ def filter_doctor_by_salary_and_specialty(specialty: str, salary: float):
     """    
 
     try:
-        conection = con.get_connection()
-        cursor = conection.cursor()
+        connection = con.get_connection()
+        cursor = connection.cursor()
         query = """SELECT * FROM doctores WHERE speciality = %s and salary > %s;"""
         cursor.execute(query, (specialty, salary,))
         records = cursor.fetchall()
@@ -31,5 +31,7 @@ def filter_doctor_by_salary_and_specialty(specialty: str, salary: float):
             print("Experiencia ", row[6])
             print('-----')
 
+        # Cerramos la conexion 
+        con.close_connection(connection)
     except Exception as e:
         raise e

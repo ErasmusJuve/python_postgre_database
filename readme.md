@@ -8,6 +8,7 @@ Requisitos:
 1. Python 3.10.2 (Minimo)
 2. Base de datos postgres version 14.4 (Minimo)
 3. Libreria **psycopg2**
+4. Libreria **python-dateutil**
 
 
 ## Creacion del contenedor de la base dedatos
@@ -182,4 +183,11 @@ Fecha que se unio al equipo  2017-12-28
 Especialidad  Pediatric
 Salario  28000.0
 Experiencia  None
+```
+
+## Ejercicio 5 Actualizar la experiencia del doctor
+
+Resultado esperado 
+```
+Doctor Id: 101  Experiencia actualizada a  17 años
 ```

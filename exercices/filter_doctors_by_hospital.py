@@ -11,8 +11,8 @@ def get_doctors_by_hospital(hospital_id: int):
         e: En caso de existir un error mostrara el traceback
     """    
     try:
-        conection = con.get_connection()
-        cursor = conection.cursor()
+        connection = con.get_connection()
+        cursor = connection.cursor()
         query = """SELECT * FROM doctores WHERE hospital_id =%s"""
         cursor.execute(query, (hospital_id,))
         records = cursor.fetchall()
@@ -26,5 +26,7 @@ def get_doctors_by_hospital(hospital_id: int):
             print("Salario ", row[5])
             print("Experiencia ", row[6])
             print('------')
+        # Cerramos la conexion 
+        con.close_connection(connection)
     except Exception as e:
         raise e

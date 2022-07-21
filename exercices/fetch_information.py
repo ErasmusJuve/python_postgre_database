@@ -54,5 +54,7 @@ def get_doctor_detail(doctor_id: int):
             print("Salario ", row[5])
             print("Experiencia ", row[6])
 
+        # Cerramos la conexion 
+        con.close_connection(connection)
     except Exception as e:
         raise e
