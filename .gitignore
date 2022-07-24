@@ -3,3 +3,4 @@
 
 # Se ignora la carpeta del bytecode
 exercices/__pycache__/
+exercices/*/__pycache__/

@@ -191,3 +191,6 @@ Resultado esperado
 ```
 Doctor Id: 101  Experiencia actualizada a  17 años
 ```
+
+## Ejercicio 6 Usar clases para las entidades Hospital y Doctor
+

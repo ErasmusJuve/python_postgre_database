@@ -1,5 +1,6 @@
 import conection as con
-
+from POJO.Doctor import Doctor
+from POJO.Hospital import Hospital
 
 def get_hospital_detail(hospital_id: int):
     """Retorna el detalle del hospital, segun el id que reciba
@@ -19,9 +20,7 @@ def get_hospital_detail(hospital_id: int):
         print(f'------Detalle del hospital numero {hospital_id}------')
 
         for row in records:
-            print("Numero de hospital ", row[0])
-            print("Nombre de hospital ", row[1])
-            print("Numero de camas ", row[2])
+            print(Hospital(row))
 
     except Exception as e:
         raise e
@@ -45,14 +44,8 @@ def get_doctor_detail(doctor_id: int):
         print(f'------Detalle del doctor numero {doctor_id}------')
 
         for row in records:
-            # doctor_id, doctor_name, hospital_id, joining_date, speciality, salary, experience
-            print("Numero del doctor ", row[0])
-            print("Nombre de doctor ", row[1])
-            print("Numero del hospital al que pertenece ", row[2])
-            print("Fecha que se unio al equipo ", row[3])
-            print("Especialidad ", row[4])
-            print("Salario ", row[5])
-            print("Experiencia ", row[6])
+            docto = Doctor(row)
+            print(docto)
 
         # Cerramos la conexion 
         con.close_connection(connection)

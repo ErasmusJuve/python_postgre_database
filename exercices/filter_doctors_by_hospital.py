@@ -1,4 +1,5 @@
 import conection as con
+from POJO.Doctor import Doctor
 
 
 def get_doctors_by_hospital(hospital_id: int):
@@ -18,13 +19,7 @@ def get_doctors_by_hospital(hospital_id: int):
         records = cursor.fetchall()
 
         for row in records:
-            print("Numero del doctor ", row[0])
-            print("Nombre de doctor ", row[1])
-            print("Numero del hospital al que pertenece ", row[2])
-            print("Fecha que se unio al equipo ", row[3])
-            print("Especialidad ", row[4])
-            print("Salario ", row[5])
-            print("Experiencia ", row[6])
+            print(Doctor(row))
             print('------')
         # Cerramos la conexion 
         con.close_connection(connection)
