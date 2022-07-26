@@ -4,6 +4,7 @@ import fetch_information
 import filter_doctors
 import filter_doctors_by_hospital
 import update_doctor_experience
+import insert_records
 
 
 def main():
@@ -21,7 +22,8 @@ def main():
 
     # Solucion del ejercicio 3
     print('Ejercicio 3: Obtener la info de doctores donde el salario sea mayor a $30000 y la especialidad sea Garnacologist')
-    filter_doctors.filter_doctor_by_salary_and_specialty('Garnacologist', 30000)
+    filter_doctors.filter_doctor_by_salary_and_specialty(
+        'Garnacologist', 30000)
     print('-'*50)
 
     # Solucion del ejercicio 4
@@ -29,10 +31,19 @@ def main():
     filter_doctors_by_hospital.get_doctors_by_hospital(2)
     print('-'*50)
 
-    # solucion del ejercicio 5 
+    # solucion del ejercicio 5
     print('Ejercicio 5 Actualizar la experiencia del doctor')
     update_doctor_experience.update_doctor_experience(101)
     print('-'*50)
+
+    # Solucion ejercicio 7
+    print("Ejercicio 7 insertar registros")
+    doctor_data = (109, "Fernando", 3, "2010-07-12", "Oncologist", 25000, 0)
+    insert_records.insert_doctor(doctor_data)
+
+    hospital_data = ('5', 'Angeles', 500)
+    insert_records.insert_hospital(hospital_data)
+
 
 if __name__ == "__main__":
     main()
