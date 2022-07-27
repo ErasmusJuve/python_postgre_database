@@ -195,4 +195,8 @@ Doctor Id: 101  Experiencia actualizada a  17 años
 ## Ejercicio 6 Usar clases para las entidades Hospital y Doctor
 
 
-## Ejercicio 7 Insertar nuevos registros a las tablas Hospitales y Doctores
+## Ejercicio 7: Insertar nuevos registros a las tablas Hospitales y Doctores
+
+## Ejercicio 8: Insertar multiples registros a la vez
+
+## Ejercicio 9: Eliminar registros
