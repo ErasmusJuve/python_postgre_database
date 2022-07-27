@@ -1,5 +1,5 @@
 import datetime
-import conection as con
+import connection as con
 from dateutil.relativedelta import relativedelta
 
 

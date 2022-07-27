@@ -1,4 +1,4 @@
-import conection as con
+import connection as con
 from POJO.Doctor import Doctor
 
 

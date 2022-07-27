@@ -1,4 +1,4 @@
-import conection
+import connection
 
 import fetch_information
 import filter_doctors

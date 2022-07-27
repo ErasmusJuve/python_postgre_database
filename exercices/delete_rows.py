@@ -1,4 +1,4 @@
-import conection as con
+import connection as con
 
 def delete_doctor(id : int):
     try:

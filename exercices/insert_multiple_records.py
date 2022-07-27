@@ -1,4 +1,4 @@
-import conection as con
+import connection as con
 
 
 def insert_many_doctors(all_data: list):
